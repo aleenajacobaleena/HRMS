@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HRMS - Feature Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="index.html">
+          <span class="brand-badge">HR</span>
+          HRMS
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">Features</a>
+          <a class="active" href="feature-details.html">Feature Details</a>
+          <a href="pricing.html">Pricing</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <span class="pill">HRMS Workflow</span>
+          <h1>Feature Details</h1>
+          <p class="lead">
+            This page describes the functional behavior of the HRMS application and how users
+            interact with each module.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">End-to-end process flow</h2>
+            <p class="section-subtitle">Timeline-based HRMS usage journey.</p>
+          </div>
+          <div class="timeline">
+            <article class="card step">
+              <strong>Introduction</strong>
+              <p>Defines system behavior, user interactions, and internal data flow.</p>
+            </article>
+            <article class="card step">
+              <strong>System Overview</strong>
+              <p>
+                Employees can authenticate, mark attendance, apply leaves, view payroll, and manage
+                profile with notifications.
+              </p>
+            </article>
+            <article class="card step">
+              <strong>Authentication</strong>
+              <p>
+                Validates credentials through API, stores token/session locally, and protects
+                restricted screens.
+              </p>
+            </article>
+            <article class="card step">
+              <strong>Dashboard</strong>
+              <p>
+                Loads attendance summary, leave balance, notifications, and quick actions for
+                check-in/out and leave.
+              </p>
+            </article>
+            <article class="card step">
+              <strong>Attendance (Check-in, Break, Check-out)</strong>
+              <p>
+                Records timestamps for sessions, tracks break duration, and calculates total active
+                work time.
+              </p>
+            </article>
+            <article class="card step">
+              <strong>Leave Management</strong>
+              <p>
+                Applies leave by type/date/reason, validates overlap, and shows approved, pending,
+                or rejected history.
+              </p>
+            </article>
+            <article class="card step">
+              <strong>Payroll</strong>
+              <p>Displays monthly salary, deductions, net pay, and payslip history as read-only.</p>
+            </article>
+            <article class="card step">
+              <strong>Profile</strong>
+              <p>Fetches and updates profile fields after input validation, with logout support.</p>
+            </article>
+            <article class="card step">
+              <strong>Notifications</strong>
+              <p>Lists title, message, and timestamp updates and refreshes on screen revisit.</p>
+            </article>
+            <article class="card step">
+              <strong>API Interaction</strong>
+              <p>Uses centralized GET and POST requests with JSON parsing and failure handling.</p>
+            </article>
+            <article class="card step">
+              <strong>Error Handling</strong>
+              <p>Shows error feedback for network/API issues and prevents crash scenarios.</p>
+            </article>
+            <article class="card step">
+              <strong>Data Persistence</strong>
+              <p>Stores authentication token/session locally, restores login state, clears on logout.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Feature Gallery</h2>
+            <p class="section-subtitle">
+              Real HRMS app screens mapped to each core module.
+            </p>
+          </div>
+          <div class="screenshots-grid">
+            <article class="card shot">
+              <img
+                class="shot-image"
+                src="images/dashboard.jpeg"
+                alt="HRMS home dashboard "
+                loading="lazy"
+              />
+              <h4>Home Dashboard</h4>
+              <p>Daily summary with punch controls and quick metrics.</p>
+            </article>
+            <article class="card shot">
+              <img
+                class="shot-image"
+                src="images/attendence.jpeg"
+                alt="Attendance records"
+                loading="lazy"
+              />
+              <h4>Attendance Records</h4>
+              <p>Monthly attendance history with status filters.</p>
+            </article>
+            <article class="card shot">
+              <img
+                class="shot-image"
+                src="images/leave.jpeg"
+                alt="Leave management "
+                loading="lazy"
+              />
+              <h4>Leave Management</h4>
+              <p>Leave balance cards, requests, and history details.</p>
+            </article>
+            <article class="card shot">
+              <img
+                class="shot-image"
+                src="images/payroll.jpeg"
+                alt="Payroll summary"
+                loading="lazy"
+              />
+              <h4>Payroll Details</h4>
+              <p>Salary summary, deductions, net pay, and monthly period view.</p>
+            </article>
+            <article class="card shot">
+              <img
+                class="shot-image"
+                src="images/profile.jpeg"
+                alt="Profile page"
+                loading="lazy"
+              />
+              <h4>Profile</h4>
+              <p>Employee account and employment information panel.</p>
+            </article>
+            <article class="card shot">
+              <img
+                class="shot-image"
+                src="images/holiday.jpeg"
+                alt="Upcoming holidays"
+                loading="lazy"
+              />
+              <h4>Notifications & Updates</h4>
+              <p>System updates presented as timestamped user-facing alerts.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>HRMS</h4>
+          <p>Automate attendance, leave, payroll, and employee operations on one platform.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <a href="index.html">Features</a>
+          <a href="feature-details.html">Feature Details</a>
+          <a href="pricing.html">Pricing</a>
+        </div>
+        <div>
+          <h4>Core Modules</h4>
+          <a href="feature-details.html">Authentication</a>
+          <a href="feature-details.html">Attendance</a>
+          <a href="feature-details.html">Leave Management</a>
+        </div>
+        <div>
+          <h4>System</h4>
+          <a href="feature-details.html">API Interaction</a>
+          <a href="feature-details.html">Error Handling</a>
+          <a href="feature-details.html">Data Persistence</a>
+        </div>
+      </div>
+      <div class="container copyright">© 2026 HRMS. All rights reserved.</div>
+    </footer>
+
+    <div class="image-modal" id="imageModal" aria-hidden="true">
+      <button class="image-modal-close" id="imageModalClose" aria-label="Close image popup">
+        ×
+      </button>
+      <img id="imageModalContent" alt="Full-size image preview" />
+    </div>
+
+    <script>
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("imageModalContent");
+      const closeBtn = document.getElementById("imageModalClose");
+      const galleryImages = document.querySelectorAll(".shot-image");
+
+      const closeModal = () => {
+        modal.classList.remove("open");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+      };
+
+      galleryImages.forEach((image) => {
+        image.addEventListener("click", () => {
+          modalImg.src = image.src;
+          modalImg.alt = image.alt;
+          modal.classList.add("open");
+          modal.setAttribute("aria-hidden", "false");
+          document.body.style.overflow = "hidden";
+        });
+      });
+
+      closeBtn.addEventListener("click", closeModal);
+      modal.addEventListener("click", (event) => {
+        if (event.target === modal) closeModal();
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && modal.classList.contains("open")) closeModal();
+      });
+    </script>
+  </body>
+</html>
